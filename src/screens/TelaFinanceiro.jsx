@@ -1,18 +1,12 @@
-import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import Header from "../components/Header";
-import StatCard from "../components/StatCard";
-import Button from "../components/Button";
-import BottomNav from "../components/BottomNav";
-import { SafeAreaView } from "react-native-safe-area-context";
+// src/screens/TelaFinanceiro.jsx
+import React from 'react';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 
 export default function TelaFinanceiro() {
   return (
     <ScrollView style={styles.container}>
-
       <Text style={styles.title}>Financeiro</Text>
       <Text style={styles.subtitle}>Resumo do Mês</Text>
-
 
       <View style={styles.cardRow}>
         <View style={styles.card}>
@@ -29,9 +23,8 @@ export default function TelaFinanceiro() {
         </View>
       </View>
 
-
       <Text style={styles.sectionTitle}>Últimas Movimentações</Text>
-      
+
       <View style={styles.item}>
         <Text style={styles.itemName}>Consulta – Carlos Magno</Text>
         <Text style={styles.itemValue}>+ R$ 300</Text>
@@ -52,11 +45,9 @@ export default function TelaFinanceiro() {
         <Text style={[styles.itemValue, { color: 'red' }]}>- R$ 500</Text>
       </View>
 
-
       <TouchableOpacity style={styles.btnExtrato}>
         <Text style={styles.btnText}>Ver Extrato Completo</Text>
       </TouchableOpacity>
-
 
       <View style={styles.bottomNav}>
         <Text style={styles.navItem}>Início</Text>

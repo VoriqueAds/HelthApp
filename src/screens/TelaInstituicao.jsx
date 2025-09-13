@@ -1,10 +1,10 @@
-import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import Header from "../components/Header";
-import StatCard from "../components/StatCard";
-import Button from "../components/Button";
-import BottomNav from "../components/BottomNav";
-import { SafeAreaView } from "react-native-safe-area-context";
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
+import Header from '../components/Header';
+import StatCard from '../components/StatCard';
+import BottomNav from '../components/BottomNav';
 
 export default function TelaInstituicao() {
   return (
@@ -16,7 +16,7 @@ export default function TelaInstituicao() {
         <View style={styles.statsRow}>
           <StatCard number={2000} label="Atendimentos" />
           <StatCard number={157} label="Pacientes" />
-          <StatCard number={"4.95"} label="Avaliação" />
+          <StatCard number={'4.95'} label="Avaliação" />
         </View>
 
         <Text style={styles.subtitle}>Próximos Atendimentos</Text>
@@ -33,12 +33,12 @@ export default function TelaInstituicao() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#fff" },
+  container: { flex: 1, backgroundColor: '#fff' },
   content: { padding: 20, flex: 1 },
-  subtitle: { fontWeight: "600", marginTop: 20, marginBottom: 10 },
-  statsRow: { flexDirection: "row", justifyContent: "space-between", marginBottom: 20 },
+  subtitle: { fontWeight: '600', marginTop: 20, marginBottom: 10 },
+  statsRow: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20 },
   box: {
-    backgroundColor: "#F6F6F6",
+    backgroundColor: '#F6F6F6',
     padding: 15,
     borderRadius: 10,
   },

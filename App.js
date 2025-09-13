@@ -8,6 +8,8 @@ import Vinculos from './src/screens/TelaVinculos';
 import Instituicao from './src/screens/TelaInstituicao';
 import Financeiro from './src/screens/TelaFinanceiro';
 
+const Stack = createStackNavigator();
+
 export default function App() {
   return (
     <NavigationContainer>
